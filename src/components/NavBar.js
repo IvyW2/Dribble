@@ -4,9 +4,9 @@ import { Form} from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
 import LoginModal from './Login';
 
-// function NavbarCustom() {
-//   return (
-//     <Navbar className='nav' expand="lg">
+function NavbarCustom() {
+   return (
+    <Navbar className='nav' expand="lg">
 //         <Navbar.Brand className='app' href="#home">Dribble</Navbar.Brand>
 //         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 //         <Navbar.Collapse id="basic-navbar-nav">
