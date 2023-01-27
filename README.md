@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Dribble
+## Description
+Dribble is a platform that allows users to showcase their technical talents such as product design. Computer programming etc. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## User Story
+- The user is able to view their profile.
+- The user can view the shots they created.
+- The user is able to create, update, delete and view their projects.
 
-## Available Scripts
+## Development Requirements
+- Visual Studio Code.
+- npm
+- Browser(Chrome or any other Chromium based Browser)
 
-In the project directory, you can run:
+## Development Installation
+To get the code..
 
-### `npm start`
+1. Got to the following github repository to access the files.
+```bash
+        https://github.com/IvyW2/dribble
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Fork and Clone the repository above to your local computer.
+```bash
+        git@github.com:IvyW2/dribble.git
+```
+3. Move to the folder where you cloned the files and install requirements and make sure you are in the below directory:
+```bash
+    cd dribble/
+```
+4. Open the folder in VS Code using the command
+```bash
+    code .
+```
+## Running the application
+5. Once in the VS Code you can ran npm start to run the React application.
+```bash
+    npm start
+```
+6. Or open the application on your browser:/
+- You can now interact with the application and make the necessary operations.
