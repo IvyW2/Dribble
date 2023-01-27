@@ -37,7 +37,7 @@ To get the code..
 ```bash
     npm start
 ```
-6. Or open the application on your browser:/
+6. Or open the application on your browser:https://main--gorgeous-croissant-f6862c.netlify.app/
 - You can now interact with the application and make the necessary operations.
 
 ## Technology used
