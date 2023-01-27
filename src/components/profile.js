@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import parse from 'html-react-parser';
+// import parse from 'html-react-parser';
 
 
 function Profile() {
@@ -8,7 +8,7 @@ function Profile() {
   const [shots, setShots] = useState([]);
   const [update, setUpdates]= useState([]);
 
-  const access_token = "56aa8f69f33e0059a795f5f2ea890a2088285f6593daa12702efdd4d939a9a8e"
+  const access_token = "91d40ad7d1106f742b8abe87811ce9156d012623918575f6cc2043fe94de8202"
   const username= "Musyoki-Wambua"
   
   const getData = async () => {
@@ -69,7 +69,8 @@ function Profile() {
           <li key={shot.id}>
             <img className='pro' src={shot.images.normal} alt={shot.title} />
             <p>{shot.title}</p>
-            {parse(shot.description)}
+            {/* {parse(shot.description)} */}
+            {(shot.description)}
           </li>
         ))}
       </ul>
