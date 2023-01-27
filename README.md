@@ -39,3 +39,18 @@ To get the code..
 ```
 6. Or open the application on your browser:/
 - You can now interact with the application and make the necessary operations.
+
+## Technology used
+- [HTML5](https://www.python.org/)
+- [Javascript](https://www.heroku.com/)
+- [CSS](https://www.heroku.com/)
+- [React](https://reactjs.org/)
+
+## Author
+Project contributed to by:
+- [Ivy Wambugha Thoya](https://github.com/IvyW2/)
+- [Khalid Zein](https://github.com/khalid-zein)
+- [Joseph Musyoki Wambua](https://github.com/Musyoki-Wambua)                       
+- [Anthony Tula](https://github.com/tony555t)                       
+## Licence
+This project is licensed under the ISC licence.
