@@ -37,3 +37,25 @@ function Profile() {
 
     // console.log(data)
   }
+
+  useEffect(() => {
+    getData();
+    getShots();
+    getupdateShots();
+
+  }, []);
+
+ 
+  const getupdateShots = async () => {
+    const config = {
+        headers: {
+            'Authorization': `Bearer ${access_token}`
+        }
+    }
+
+    const {data} = await axios.post ("https://api.dribbble.com/v2/shots", config)
+    setUpdates(data)
+    console.log("jidijfedjief")
+    return(data)
+  }
+
