@@ -58,4 +58,23 @@ function Profile() {
     console.log("jidijfedjief")
     return(data)
   }
+  return (
+    <div className='profile'>
+      <h1>{user.name}</h1>
+      <img src={user.avatar_url} alt={user.name} className="img"/>
+      <p>{user.bio}</p>
+      <h2 className='shot'>Shots</h2>
+      <ul>
+        {shots.map(shot => (
+          <li key={shot.id}>
+            <img className='pro' src={shot.images.normal} alt={shot.title} />
+            <p>{shot.title}</p>
+            {parse(shot.description)}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
+export default Profile;
