@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import { axiosApi } from '../api/base';
 import { PROJECTS } from '../api/endpoints';
 
-function Project({toggleModal, activeProject , isEdit, listProjects}) {
+function Project({show, toggleModal, activeProject , isEdit, listProjects}) {
   
   const [ name, setName] = useState('');
   const [ description, setDescription] = useState('');
@@ -41,22 +41,37 @@ function Project({toggleModal, activeProject , isEdit, listProjects}) {
   } 
 
   return (
-    <div>      
-      <Modal>
+    <>
+      <Modal show={show} onHide={toggleModal}>
         <Modal.Header closeButton>
           <Modal.Title>Add/Edit Project</Modal.Title>
         </Modal.Header>
+        <Modal.Body>
+        <Form>
+            <Form.Group className="mb-3" controlId="formname">
+                <Form.Label>Name</Form.Label>
+                <Form.Control 
+                type="text" 
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Enter name" />
+            </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Description</Form.Label>
+                <Form.Control type="text" value={description} placeholder="Enter description" onChange={(e) => setDescription(e.target.value)} />
+            </Form.Group>
+        </Form>
+        </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" >
+          <Button variant="secondary" onClick={toggleModal}>
             Close
           </Button>
           <Button variant="primary" onClick={() => isEdit ? editProject() :  addProject()}>
            {isEdit ? 'Edit' : 'Add'}
           </Button>
         </Modal.Footer>
-      </Modal>  
-    </div>
-  )
-    
-
-}export default Project;
+      </Modal>
+    </>
+  );
+}
+export default Project;
